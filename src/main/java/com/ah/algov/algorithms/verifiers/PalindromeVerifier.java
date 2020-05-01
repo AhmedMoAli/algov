@@ -15,8 +15,8 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import com.ah.algov.AlgoVApplication;
-import com.ah.algov.algorithms.controllers.errorhandling.VerificationException;
-import com.ah.algov.algorithms.utils.CompilationUtil;
+import com.ah.algov.controllers.errorhandling.VerificationException;
+import com.ah.algov.utils.CompilationUtil;
 
 /**
  * 

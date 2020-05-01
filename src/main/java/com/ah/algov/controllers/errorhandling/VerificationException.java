@@ -1,4 +1,4 @@
-package com.ah.algov.algorithms.controllers.errorhandling;
+package com.ah.algov.controllers.errorhandling;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

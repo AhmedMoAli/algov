@@ -1,4 +1,4 @@
-package com.ah.algov.algorithms.controllers;
+package com.ah.algov.controllers;
 
 import java.util.List;
 import java.util.Map;
@@ -16,9 +16,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.ah.algov.algorithms.Algorithm;
-import com.ah.algov.algorithms.dto.AlgorithmDTO;
-import com.ah.algov.algorithms.dto.AlgorithmIdentifierDTO;
 import com.ah.algov.algorithms.verifiers.Verification;
+import com.ah.algov.dto.AlgorithmDTO;
+import com.ah.algov.dto.AlgorithmIdentifierDTO;
 
 /**
  * REST Controller for handling Algorithm actions.

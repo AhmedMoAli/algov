@@ -1,4 +1,4 @@
-package com.ah.algov.algorithms.controllers.errorhandling;
+package com.ah.algov.controllers.errorhandling;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -9,7 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
-import com.ah.algov.algorithms.dto.StandardErrorResponse;
+import com.ah.algov.dto.StandardErrorResponse;
 
 @ControllerAdvice
 public class GlobalExceptionHandler {

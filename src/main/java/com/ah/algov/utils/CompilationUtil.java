@@ -1,10 +1,10 @@
-package com.ah.algov.algorithms.utils;
+package com.ah.algov.utils;
 
 import java.lang.reflect.Method;
 
 import org.mdkt.compiler.InMemoryJavaCompiler;
 
-import com.ah.algov.algorithms.controllers.errorhandling.VerificationException;
+import com.ah.algov.controllers.errorhandling.VerificationException;
 
 /**
  * 

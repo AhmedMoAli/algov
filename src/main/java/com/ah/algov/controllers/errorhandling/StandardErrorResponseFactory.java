@@ -1,11 +1,11 @@
-package com.ah.algov.algorithms.controllers.errorhandling;
+package com.ah.algov.controllers.errorhandling;
 
 import java.math.BigDecimal;
 
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 
-import com.ah.algov.algorithms.dto.StandardErrorResponse;
+import com.ah.algov.dto.StandardErrorResponse;
 
 /**
  * The standard error response factory class.

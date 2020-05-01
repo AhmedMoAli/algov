@@ -1,4 +1,4 @@
-package com.ah.algov.algorithms.dto;
+package com.ah.algov.dto;
 
 import java.math.BigDecimal;
 

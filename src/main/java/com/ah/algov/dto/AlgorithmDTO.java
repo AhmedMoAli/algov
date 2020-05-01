@@ -1,14 +1,15 @@
-package com.ah.algov.algorithms.dto;
+package com.ah.algov.dto;
 
 /***
  * 
- * DTO holding algorithm identifier.
+ * DTO holding algorithm information.
  *
  */
-public class AlgorithmIdentifierDTO {
+public class AlgorithmDTO {
 
 	private String id;
 	private String name;
+	private String template;
 
 	public String getId() {
 		return id;
@@ -25,4 +26,13 @@ public class AlgorithmIdentifierDTO {
 	public void setName(String name) {
 		this.name = name;
 	}
+
+	public String getTemplate() {
+		return template;
+	}
+
+	public void setTemplate(String template) {
+		this.template = template;
+	}
+
 }
