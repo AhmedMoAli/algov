@@ -22,11 +22,25 @@ public class GlobalExceptionHandler {
 	 * @return a API {@link StandardErrorResponse}.
 	 */
 	@ExceptionHandler({ RuntimeException.class })
-	public ResponseEntity<StandardErrorResponse> handleInternalError(final HttpServletRequest request,
+	public ResponseEntity<StandardErrorResponse> handleBadRequestError(final HttpServletRequest request,
 			final Exception exception) {
 		return new ResponseEntity<>(
 				StandardErrorResponseFactory.create(request.getServletPath(), exception, HttpStatus.BAD_REQUEST),
 				this.jsonHttpHeaders(), HttpStatus.BAD_REQUEST);
+	}
+
+	/**
+	 * Handle Bad Request for various exceptions.
+	 *
+	 * @param request   current request.
+	 * @param exception the exception.
+	 * @return a API {@link StandardErrorResponse}.
+	 */
+	@ExceptionHandler({ CommunicationException.class })
+	public ResponseEntity<StandardErrorResponse> handleInternalError(final HttpServletRequest request,
+			final Exception exception) {
+		return new ResponseEntity<>(StandardErrorResponseFactory.create(request.getServletPath(), exception,
+				HttpStatus.INTERNAL_SERVER_ERROR), this.jsonHttpHeaders(), HttpStatus.INTERNAL_SERVER_ERROR);
 	}
 
 	protected HttpHeaders jsonHttpHeaders() {

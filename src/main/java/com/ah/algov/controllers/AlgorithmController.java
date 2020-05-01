@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.ah.algov.algorithms.Algorithm;
 import com.ah.algov.algorithms.verifiers.Verification;
+import com.ah.algov.controllers.errorhandling.VerificationException;
 import com.ah.algov.dto.AlgorithmDTO;
 import com.ah.algov.dto.AlgorithmIdentifierDTO;
 
@@ -89,7 +90,7 @@ public class AlgorithmController {
 
 		try {
 			verification = algorithmToVerify.solutionVerifier().isValidSolution(rawProposedSolution);
-		} catch (Exception exp) {
+		} catch (VerificationException exp) {
 			verification = new Verification();
 			verification.setFailed(true);
 			verification.setFailureMSG(exp.getMessage());
